@@ -38,7 +38,7 @@
                 var zip = new JSZip();
 
                 let patchNum = 0;
-                let patchPath = ''; 
+                let patchPath = '';
                 let patchContent = [];
 
                 const patchFileName = files[0].name;
@@ -71,8 +71,7 @@
                         zip.file(patchPath, `${patchContent.join('\n')}\n`);
                         patchContent = [];
                     }
-                    zip.generateAsync({type:"blob"}).then(function(content) {
-                        // see FileSaver.js
+                    zip.generateAsync({ type: "blob" }).then(function (content) {
                         saveAs(content, patchFileName + '.zip');
                     });
 
