@@ -80,17 +80,17 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'src/index.html'
     }),
+    new FilterPlugin({
+      files: [
+        'main.js.LICENSE'
+      ]
+    }),
     new workboxPlugin.GenerateSW({
       swDest: 'sw.js',
       importWorkboxFrom: 'disabled',
       importScripts: ['workbox-sw.js'],
       clientsClaim: true,
       skipWaiting: false,
-    }),
-    new FilterPlugin({
-      files: [
-        'main.js.LICENSE'
-      ]
     })
   ],
 
