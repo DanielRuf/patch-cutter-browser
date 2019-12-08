@@ -11,10 +11,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "main.js"
   },
   {
-    "revision": "455f9f3ae849b1b7c9d5b5f2d351830a",
-    "url": "main.js.LICENSE"
-  },
-  {
     "revision": "6e1e47d706556eac8524f396e785d4bb",
     "url": "workbox-sw.js"
   }
