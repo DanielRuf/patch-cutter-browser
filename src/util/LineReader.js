@@ -273,4 +273,5 @@ var LineReader = function(options) {
       boundEvents[event].apply(this, args)
     }
   }
-  
+
+module.exports = LineReader;
