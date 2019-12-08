@@ -13,7 +13,7 @@
 
 importScripts(
   "workbox-sw.js",
-  "precache-manifest.75e263548be5c3441263b7a405f32948.js"
+  "precache-manifest.183945d51973a08771b764cf7b2bbb67.js"
 );
 
 self.addEventListener('message', (event) => {
