@@ -60,6 +60,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const workboxPlugin = require('workbox-webpack-plugin');
+const WebpackPwaManifest = require('webpack-pwa-manifest');
 const purgecss = require('@fullhuman/postcss-purgecss')({
   content: [
     './src/index.html'
@@ -84,6 +85,15 @@ module.exports = {
       files: [
         'main.js.LICENSE'
       ]
+    }),
+    new WebpackPwaManifest({
+      name: 'Patch Cutter',
+      short_name: 'Patch Cutter',
+      description: 'Cut your patches into pieces',
+      start_url: 'https://danielruf.github.io/patch-cutter-browser/',
+      background_color: '#ffffff',
+      crossorigin: null, //can be null, use-credentials or anonymous
+      icons: []
     }),
     new workboxPlugin.GenerateSW({
       swDest: 'sw.js',
