@@ -93,7 +93,10 @@ module.exports = {
       start_url: 'https://danielruf.github.io/patch-cutter-browser/',
       background_color: '#ffffff',
       crossorigin: null, //can be null, use-credentials or anonymous
-      icons: []
+      icons: [{
+        src: path.resolve('src/logo.png'),
+        sizes: [96, 128, 192, 250] // multiple sizes
+      }]
     }),
     new workboxPlugin.GenerateSW({
       swDest: 'sw.js',
