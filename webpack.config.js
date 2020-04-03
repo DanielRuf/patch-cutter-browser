@@ -83,7 +83,7 @@ module.exports = {
     }),
     new FilterPlugin({
       files: [
-        'main.js.LICENSE'
+        'main.js.LICENSE.txt'
       ]
     }),
     new WebpackPwaManifest({
