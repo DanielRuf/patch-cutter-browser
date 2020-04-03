@@ -100,7 +100,7 @@ module.exports = {
     }),
     new workboxPlugin.GenerateSW({
       swDest: 'sw.js',
-      importWorkboxFrom: 'disabled',
+      inlineWorkboxRuntime: false,
       importScripts: ['workbox-sw.js'],
       clientsClaim: true,
       skipWaiting: false,
