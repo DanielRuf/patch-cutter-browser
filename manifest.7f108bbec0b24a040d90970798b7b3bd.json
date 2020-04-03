@@ -1,9 +1,0 @@
-{
-  "name": "Patch Cutter",
-  "short_name": "Patch Cutter",
-  "orientation": "portrait",
-  "display": "standalone",
-  "start_url": "https://danielruf.github.io/patch-cutter-browser/",
-  "description": "Cut your patches into pieces",
-  "background_color": "#ffffff"
-}
